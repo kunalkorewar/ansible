@@ -1,3 +1,4 @@
 ---
 
 apachesoft: apache2
+javainstall: openjdk-8-jdk
