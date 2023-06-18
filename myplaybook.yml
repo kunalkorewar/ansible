@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webserver
   tasks: 
   - name: i want to install webserver
     apt:
@@ -12,5 +12,5 @@
        state: started
 
 
-       
+
      
