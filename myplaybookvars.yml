@@ -8,4 +8,6 @@
   tasks:
     - name: i want to display myvar01 output
       debug:
-        msg: "{{myvar01}}"
+        outputMyvar01: "{{myvar01}}"
+        outputMyvar02: "{{myvar02}}"
+        outputMyvar03: "{{myvar03}}"
