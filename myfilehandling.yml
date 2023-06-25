@@ -2,10 +2,14 @@
 - hosts: 172.31.4.209
   become: yes
   tasks:
-  - include_tasks: myfile.yml
-    
-  - name: install webserver
-    apt:
-     name: apache2
-     state: present
-       
+    - include_tasks: myfile.yml
+
+    - name: install webserver
+      apt:
+        name: apache2
+        state: present
+
+    - name: i want copy mytestfile into node side
+      copy:
+        src: mytestfile
+        dest: /home/ubuntu/mytestfile
