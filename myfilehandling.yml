@@ -13,3 +13,9 @@
       copy:
         src: mytestfile
         dest: /home/ubuntu/mytestfile
+
+
+    - name: i want copy index.j2 file into node side
+      template:
+        src: mytestfile
+        dest: /home/ubuntu/mytestfile      
